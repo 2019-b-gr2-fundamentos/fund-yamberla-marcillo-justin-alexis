@@ -15,3 +15,5 @@ const casado = false;
 console.log(typeof casado);
 const fecha = new Date();
 console.log(typeof fecha);
+
+//21/10/19
