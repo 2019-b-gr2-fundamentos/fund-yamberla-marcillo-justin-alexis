@@ -1,6 +1,6 @@
 //Este es un comentario
 //Nombre: Justin Yamberla
-//Fecha: 17/10/2019
+//Fecha: 17/10/2019 (Cumpleaños :') )
 /* Descripción: Variables Primitivas en Java */
 /* Este es un bloque de comentario */
 
@@ -22,6 +22,11 @@ let edad = 22; //Mutable --> Puede cambiar
 const IVA = 14;
 //IVA = 14; //No se puede reasignar un valor a un Inmutable!
 let sueldo = 0;
+
+function hello(text){
+    console.log(text);
+}
+hello("Hola Mundo");
 
 //edad = 30 --> python
 //val edad: Integer = 30; --> kotlin (Inmutable)
