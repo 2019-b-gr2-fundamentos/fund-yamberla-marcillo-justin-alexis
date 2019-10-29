@@ -7,7 +7,7 @@ console.log("No está casado")
 }
 
 const tengomosa = true;
-const casadoYmosero == casado == true && tengomosa == true
+const casadoYmosero = casado == true && tengomosa == true
 if(casadoYmosero){
     console.log("casado y mosero")
 }else{

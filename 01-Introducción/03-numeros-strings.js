@@ -21,7 +21,7 @@ const edad = 30;
 const SaludEdad = `Mi edad es: ${edad}` //template strings
 console.log(SaludEdad)
 
-const SaludoCompleto = `${mensaje}${saludo}` //tempalte strings
+const SaludoCompleto = `${mensaje}${saludo}` //template strings
 console.log(SaludoCompleto)
 
 //COntamos los elementos
