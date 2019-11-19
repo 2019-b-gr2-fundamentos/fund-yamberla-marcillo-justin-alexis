@@ -58,9 +58,7 @@ Ej: [0, 0, 1, 0, 0]
 *Exista al menos un elemento 1:
 [0, 0, 0, 0, 0] no valido
 [0, 0, 0, 1, 0] valido
-
 Adivinar donde está en 1 (el florón).
-
 funcion para generar numeros random del 0 - 1: Math.floor(Math.random() *2) 
 el *2 indica el rango en que pueden variar los numeros. Si es *10 sería de 0 - 9
  */
@@ -79,4 +77,3 @@ if (cont >= 5){
     
 }
 else{console.log(arreglo1)}
-
