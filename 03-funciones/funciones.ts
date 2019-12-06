@@ -44,3 +44,14 @@ function calculadora(){
         calculadora();
     }
 }
+
+/*
+1) Seleccionar operacion
+2.1) La seleccion no es VALIDA
+    2.1.1) Vuelve a seleccionar la operacion 
+2.2) La seleccion es VALIDA
+    2.2.1) Ingresar primer numero
+    2.2.2) Ingresar segundo numero
+    2.2.3) Ejecutar la operacion
+ 
+*/
