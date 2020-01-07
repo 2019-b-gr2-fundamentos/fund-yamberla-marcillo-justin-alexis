@@ -1,0 +1,14 @@
+{
+  "name": "05-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc index.ts || echo) && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "justin-yamberla": "^1.0.0"
+  }
+}
