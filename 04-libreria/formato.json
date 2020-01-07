@@ -1,0 +1,16 @@
+{
+    "nombre": "Justin" ,
+    "apellido": "Yamberla",
+    "edad": 30,
+    "casado": false,
+    "hijos": null,
+    "mascotas": ["cachetes"],
+    "primo": {
+        "nombre": "Juan" ,
+        "apellido": "Eguez",
+        "edad": 30,
+        "casado": false,
+        "hijos": null,
+        "mascotas": []
+    }
+}
