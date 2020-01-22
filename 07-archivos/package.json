@@ -1,0 +1,11 @@
+{
+  "name": "07-archivos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc 01-archivos.ts || echo) && node 01-archivos.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
