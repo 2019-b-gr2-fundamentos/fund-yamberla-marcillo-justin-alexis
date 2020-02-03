@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import * as fs from 'prompts';
 
 export function leerArchivo(path: string):string {
     console.log("Leer archivo")

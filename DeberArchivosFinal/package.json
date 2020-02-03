@@ -1,0 +1,14 @@
+{
+  "name": "deberarchivosfinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc archivosfinal.ts || echo) && node archivosfinal.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^2.3.0"
+  }
+}

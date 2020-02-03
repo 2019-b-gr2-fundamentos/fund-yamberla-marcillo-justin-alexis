@@ -48,7 +48,7 @@ function main() {
                 case 0:
                     contador = 1;
                     contenidoArchivo = _02_leer_archivo_1.leerArchivo('./ejemplo.txt');
-                    arregloCargadoDeArchivo = JSON.parse(contenidoArchivo) //convierte datos de txt a objeto
+                    arregloCargadoDeArchivo = JSON.parse("[\n]") //convierte datos de txt a objeto
                     ;
                     arregloEstudiantes = arregloCargadoDeArchivo //arreglo de tipo Estudiante
                     ;

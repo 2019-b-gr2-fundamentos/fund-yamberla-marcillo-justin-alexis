@@ -1,0 +1,14 @@
+{
+  "name": "deber07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc 01-archivosm.ts || echo) && node 01-archivosm.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^2.3.0"
+  }
+}
