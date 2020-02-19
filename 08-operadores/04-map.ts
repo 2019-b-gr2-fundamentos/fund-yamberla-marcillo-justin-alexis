@@ -1,17 +1,20 @@
-export function filter(
-    arreglo: any[],
-    funcion: (valorActual: any, indice?: number, arreglo?: any[]) => any //la flecha gorda indica que devuelve any
-): any[]{
-    const arregloFiltrado = [];
+export function map(
+    arregloOriginal: any[],
+    funcion: (
+        valorActual: any,
+        indice?: number,
+        arreglo?: any[]) => any
+): any[] {
+    const nuevoArreglo = [];
+    const arreglo = [...arregloOriginal]; // le hago un Clon
     for(let i = 0; i < arreglo.length; i++){
+        const clon = [...arreglo]; // Crear clon en cada iteracion 
         const respuestaFuncion = funcion(
-            arreglo[i],
+            clon[i],
             i,
-            arreglo,
+            [...arreglo], // Clon del clon para que juegue el programador 
         );
-        if(respuestaFuncion == true){
-            arregloFiltrado.push(arreglo[i]);
-        }
-    }
-    return arregloFiltrado
+        nuevoArreglo.push(respuestaFuncion);
+    };
+    return nuevoArreglo;
 }

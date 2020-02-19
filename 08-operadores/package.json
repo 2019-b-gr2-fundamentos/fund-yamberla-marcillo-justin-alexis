@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "(tsc 01-main.ts || echo) && node 01-main.js"
- },
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^2.3.1"
+  }
 }

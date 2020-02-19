@@ -2,6 +2,10 @@
 exports.__esModule = true;
 var _02_filter_1 = require("./02-filter");
 var _03_foreach_1 = require("./03-foreach");
+var _04_map_1 = require("./04-map");
+var _05_every_1 = require("./05-every");
+var _06_some_1 = require("./06-some");
+var _07_reduce_1 = require("./07-reduce");
 function main() {
     //Una ventaja de TypeScript es que no es necesario definir una estructura.
     //Si eciste un problema como la ausencia de variables, tipar 'any'.
@@ -76,17 +80,39 @@ function main() {
     );
     console.log('Respuesta de Reduce: ', respuestaReduce);
     console.log('Promedio: ', respuestaReduce / arregloEstudiantes.length);
+    //--------------------------------------OP a MANO----------------------
+    //Filter
     var respuestaFilterNuestro = _02_filter_1.filter(arregloEstudiantes, function (valorActual, i, arr) {
         /*console.log('Valor', valorActual);
         console.log('Indice', i);
         console.log('Arreglo', arr);*/
         return valorActual.nota >= 7;
     });
-    console.log('RespuestaNuestro', respuestaFilterNuestro);
+    console.log('RespuestaFilterNuestro', respuestaFilterNuestro);
+    //Foreach
     var respuestaForNuestro = _03_foreach_1.forEach(arregloEstudiantes, function (valorActual, i, arr) {
         return valorActual.nota;
     });
     console.log('RespuestaForNuestro: ', respuestaForNuestro);
+    //Map
+    var respuestaMapNuestro = _04_map_1.map(arregloEstudiantes, function (valorActual, i, arr) {
+        return valorActual.nota;
+    });
+    console.log('RespuestaMapNuestro: ', respuestaMapNuestro);
+    //every
+    var respuestaEveryNuestro = _05_every_1.every(arregloEstudiantes, function (valorActual, i, arr) {
+        return valorActual.nota;
+    });
+    console.log('RespuestaEveryNuestro: ', respuestaEveryNuestro);
+    //some
+    var respuestaSomeNuestro = _06_some_1.some(arregloEstudiantes, function (valorActual, i, arr) {
+        return valorActual.nota;
+    });
+    //reduce
+    var respuestaReduceNuestro = _07_reduce_1.reduce(arregloEstudiantes, function (valorActual, i, arr) {
+        return valorActual;
+    });
+    console.log('RespuestaReduceNuestro: ', respuestaReduceNuestro);
     console.log('Arreglo original: ', arregloEstudiantes);
 }
 main();

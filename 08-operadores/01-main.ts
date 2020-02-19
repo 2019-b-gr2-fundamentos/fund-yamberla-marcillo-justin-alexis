@@ -1,5 +1,9 @@
 import { filter } from "./02-filter";
 import { forEach } from "./03-foreach";
+import { map } from "./04-map"
+import { every } from "./05-every"
+import { some } from "./06-some"
+import { reduce } from "./07-reduce"
 
 function main(){
     //Una ventaja de TypeScript es que no es necesario definir una estructura.
@@ -108,7 +112,7 @@ const respuestaFilterNuestro = filter(
         return valorActual.nota >= 7;
     }
 );
-console.log('RespuestaNuestro', respuestaFilterNuestro)
+console.log('RespuestaFilterNuestro', respuestaFilterNuestro)
 
 //Foreach
 const respuestaForNuestro = forEach(
@@ -118,6 +122,41 @@ const respuestaForNuestro = forEach(
     }
 );
 console.log('RespuestaForNuestro: ', respuestaForNuestro)
+
+//Map
+const respuestaMapNuestro = map(
+    arregloEstudiantes,
+    function(valorActual, i, arr){
+        return valorActual.nota
+    }
+);
+console.log('RespuestaMapNuestro: ', respuestaMapNuestro)
+
+//every
+const respuestaEveryNuestro = every(
+    arregloEstudiantes,
+    function(valorActual, i, arr){
+        return valorActual.nota
+    }
+);
+console.log('RespuestaEveryNuestro: ', respuestaEveryNuestro)
+
+//some
+const respuestaSomeNuestro = some(
+    arregloEstudiantes,
+    function(valorActual, i, arr){
+        return valorActual.nota
+    }
+);
+
+//reduce
+const respuestaReduceNuestro = reduce(
+    arregloEstudiantes,
+    function(valorActual, i, arr){
+        return valorActual
+    }
+);
+console.log('RespuestaReduceNuestro: ', respuestaReduceNuestro)
 
 console.log('Arreglo original: ',arregloEstudiantes);
 }

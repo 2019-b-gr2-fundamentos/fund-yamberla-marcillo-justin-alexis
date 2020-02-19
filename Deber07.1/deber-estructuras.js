@@ -101,7 +101,7 @@ function queDeseaHacer() {
                 case 0: return [4 /*yield*/, prompts({
                         type: 'text',
                         name: 'respuestas',
-                        message: '¿Que desea hacer?: \n 1-crear otro registro \n 2-leer los registros actuales \n 3-actualizar datos \n 4-eliminar registros \n 5-SALIR\n '
+                        message: '¿Que desea hacer?: \n 1: Crear otro registro \n 2: Leer los registros existentes \n 3: Actualizar datos \n 4: Eliminar registros \n 5: Salir\n '
                     })];
                 case 1:
                     preguntas = _a.sent();

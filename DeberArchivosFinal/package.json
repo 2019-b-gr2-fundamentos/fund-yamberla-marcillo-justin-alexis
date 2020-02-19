@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "(tsc archivosfinal.ts || echo) && node archivosfinal.js"
+    "marca": "(tsc marca.ts || echo) && node marca.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prompts": "^2.3.0"
+    "prompts": "^2.3.1"
   }
 }
