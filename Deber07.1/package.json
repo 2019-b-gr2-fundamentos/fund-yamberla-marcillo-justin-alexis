@@ -1,0 +1,14 @@
+{
+  "name": "deber07.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc deber-estructuras.ts || echo) && node deber-estructuras.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^2.3.0"
+  }
+}

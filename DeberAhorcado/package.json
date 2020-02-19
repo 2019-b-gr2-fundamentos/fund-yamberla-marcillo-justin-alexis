@@ -1,0 +1,15 @@
+{
+  "name": "deberahorcado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc ahorcado.ts || ECHO) && node ahorcado.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/prompts": "^2.0.3",
+    "prompts": "^2.3.1"
+  }
+}

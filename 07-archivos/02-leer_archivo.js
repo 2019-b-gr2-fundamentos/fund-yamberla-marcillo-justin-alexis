@@ -1,6 +1,6 @@
 "use strict";
-exports.__esModule = true;
-var fs = require("fs");
+Object.defineProperty(exports, "__esModule", { value: true });
+var fs = require("prompts");
 function leerArchivo(path) {
     console.log("Leer archivo");
     var resultado = fs.readFileSync(path, //Path (si estamos dentro de la misma carpeta)

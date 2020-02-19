@@ -1,0 +1,11 @@
+{
+  "name": "09-referencias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "(tsc main.ts || echo) && node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

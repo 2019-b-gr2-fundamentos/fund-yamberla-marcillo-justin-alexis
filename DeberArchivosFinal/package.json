@@ -1,0 +1,14 @@
+{
+  "name": "deberarchivosfinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "marca": "(tsc marca.ts || echo) && node marca.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^2.3.1"
+  }
+}

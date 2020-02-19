@@ -10,7 +10,7 @@ async function main(){
     const contenidoArchivo = leerArchivo(
         './ejemplo.txt'
     )
-    const arregloCargadoDeArchivo = JSON.parse(contenidoArchivo) //convierte datos de txt a objeto
+    const arregloCargadoDeArchivo = JSON.parse("[\n]") //convierte datos de txt a objeto
     const arregloEstudiantes: Estudiante[] = arregloCargadoDeArchivo //arreglo de tipo Estudiante
     const arregloPreguntas = [
     {
