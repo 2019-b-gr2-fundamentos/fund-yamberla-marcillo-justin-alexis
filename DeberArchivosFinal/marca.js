@@ -76,12 +76,12 @@ function nuevaMarca() {
                             message: 'Ingresa talla: '
                         },
                         {
-                            type: 'text',
+                            type: 'number',
                             name: 'precio',
                             message: 'Ingresa precio: '
                         },
                         {
-                            type: 'number',
+                            type: 'text',
                             name: 'categoria',
                             message: 'Ingresa categoria: '
                         }
@@ -226,7 +226,7 @@ function actualizarMarca() {
                 case 9:
                     if (!(propiedadEdicion == 4)) return [3 /*break*/, 11];
                     return [4 /*yield*/, prompts({
-                            type: 'text',
+                            type: 'number',
                             name: 'nuevoPrecio',
                             message: 'Ingrese el nuevo precio: '
                         })];
@@ -237,7 +237,7 @@ function actualizarMarca() {
                 case 11:
                     if (!(propiedadEdicion == 5)) return [3 /*break*/, 13];
                     return [4 /*yield*/, prompts({
-                            type: 'number',
+                            type: 'text',
                             name: 'nuevaCategoria',
                             message: 'Ingrese la nueva categoria: '
                         })];

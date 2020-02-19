@@ -40,12 +40,12 @@ async function nuevaMarca(){
             message: 'Ingresa talla: '
         },
         {
-            type: 'text',
+            type: 'number',
             name: 'precio',
             message: 'Ingresa precio: '
         },
         {
-            type: 'number',
+            type: 'text',
             name: 'categoria',
             message: 'Ingresa categoria: '   
         }
@@ -151,14 +151,14 @@ async function actualizarMarca(){
         arregloMarcas[marcaEncontrada].talla = nuevoAtributo.nuevoAtributo;
     }else if(propiedadEdicion == 4){
         const nuevaEvolucion = await prompts({
-            type: 'text',
+            type: 'number',
             name: 'nuevoPrecio',
             message: 'Ingrese el nuevo precio: '
         });
         arregloMarcas[marcaEncontrada].precio = nuevaEvolucion.nuevaEvolucion;
     }else if(propiedadEdicion == 5){
         const nuevaTemporada = await prompts({
-            type: 'number',
+            type: 'text',
             name: 'nuevaCategoria',
             message: 'Ingrese la nueva categoria: '
         });

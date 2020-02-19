@@ -3,6 +3,6 @@ export interface propiedadesMarca{
     nombre: string;
     color: string;
     talla: string;
-    precio: string;
-    categoria: number;
+    precio: number;
+    categoria: string;
 }

@@ -1,0 +1,1 @@
+[{"id":11,"nombre":"adidas","color":"blue","talla":"S","precio":550,"categoria":"luxury"},{"id":12,"nombre":"gucci","color":"green","talla":"L","precio":460,"categoria":"uxury"}]
